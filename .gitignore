@@ -1,0 +1,26 @@
+# Node.js
+node_modules/
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE Config
+.vscode/
+.idea/
+
+# Generated files
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.bak
