@@ -33,13 +33,14 @@ document.getElementById("sendMessage").addEventListener("click", async function(
 
     // Make a POST request to the backend to get the chatbot's response
     try {
-        const response = await fetch('/chat', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ message: userMessage }),
-        });
+        const response = await fetch('http://localhost:5000/chat', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ message: userMessage }),
+});
+
 
         const data = await response.json();
         if (data.reply) {
